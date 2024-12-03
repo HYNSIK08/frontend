@@ -1,0 +1,99 @@
+/* 모든 요소 margin 과 padding 기본값 0으로 */
+/*마진:바깥여백,패딩: 안쪽여백*/
+* {
+  margin: 0;
+  padding: 0;
+}
+bady{
+  width:1100px;
+  /*위아래:0 좌우:자동*/
+  margin: 0 auto;
+}
+
+
+
+/*header 시작*/
+header {
+  background-color: aliceblue;
+  /* boder: 1px dashed red; */
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+a {
+        text-decoration: none;
+  color: #555555;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  color: #01a1dd;
+}
+
+.nav a {
+  padding: 0 15px;
+}
+/*main 시작*/
+main{
+    background-image: url("images/coffee-8478202_1280.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100%;
+    margin-bottom: 30px;
+}
+.welcome{
+    /* 16px = 1em */
+    /*대문자 M의 너비 기준으로(1em)으로 한후
+    비율 값을 지정 */
+    font-size: 1em;
+    color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:300px;
+    left: 45px;
+}
+.hello{
+    position: relative;
+    top: 295px;
+    left: 45px;
+    font-size: 3em;
+    color:lightgray;
+    font-family:Arial, Helvetica, sans-serif;
+}
+button{
+    background-color:#01a1dd;
+    padding: 5px 24px;
+    color: aliceblue;
+    border: 0;
+    position: relative;
+    top: 300px;
+    left: 45px;
+
+}
+/* footer 시작*/
+footer{
+    padding: 10px 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555555;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+  i{
+    font-size: 20px;
+
+  }
+
+  /*반응형 웹 (가로사이즈 조절시)*/
+  @media(max-width:800px){
+    .nav a{
+        display: none;
+    }
+  }
